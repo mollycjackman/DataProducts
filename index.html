@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Polarization in Congress</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Polarization in Congress">
+  <meta name="author" content="Molly Jackman">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="libraries/widgets/interactive/css/aceeditor.css"></link>
+<link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Polarization in Congress</h1>
+    <h2>Changing Preferences Since the Civil War</h2>
+    <p>Molly Jackman<br/>Course Project for Developing Data Products</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Changing Preferences in Congress?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><a href = "http://talkingpointsmemo.com/cafe/the-big-bang-theory-of-political-polarization-congress-gridlock"><img style="float: left" src="gridlock.png" height = "550", width = "400"></a></p>
+
+<ul>
+<li>Legislators in recent Congresses are more polarized than <a href="http://www.nationaljournal.com/2013-vote-ratings/the-most-divided-congress-ever-at-least-until-next-year-20140206">ever</a>.</li>
+<li>Increased polarization is <a href="http://www.washingtonpost.com/blogs/monkey-cage/wp/2014/01/13/how-political-polarization-creates-stalemate-and-undermines-lawmaking/">responsible for gridlock.</a></li>
+<li>Are legislators really more polarized today than during the Civil War?</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Measuring Legislator Preferences</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>&quot;Ideal point estimation&quot; uses roll call voting records to calculate measures of legislators&#39; preferences.
+
+<ul>
+<li>Start with a matrix of roll call votes (0 = nay, 1 = yea).</li>
+<li>The probability that member \(i\) votes &quot;yea&quot; on a bill (\(y_{it}=1\)) is:
+\[  Pr(y_{it}=1)=F(\alpha_{t}+\beta_{t}x_{i}) \]
+where \(\alpha_{t}\) is the probability of voting “yea” on vote \(t\) regardless of a member’s ideal point, and \(\beta_{t}\) is the probability of voting “yea” that reflects the member’s ideal point \(x_{i}\).</li>
+<li>Constrain outcomes [-1,1], where conservative preferences are typically associated with positive ideal points.</li>
+</ul></li>
+<li>DW-NOMINATE scores measures the ideal points of legislators who served in the 1st-113th Congresses. 
+
+<ul>
+<li>Comparable over time: use legislators who served in multiple Congresses to &quot;bridge.&quot; </li>
+<li>More info: <a href="http://voteview.com/dwnomin.htm">http://voteview.com/dwnomin.htm</a></li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Preferences in the U.S. House of Representatives</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/fig/unnamed-chunk-1-1.png" alt="plot of chunk unnamed-chunk-1"> </p>
+
+<p>Legend: <span style="color:blue">Democrats</span>, <span style="color:red">Republicans</span>, and <span style="color:green">Other</span></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Preferences in the Senate</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/fig/unnamed-chunk-2-1.png" alt="plot of chunk unnamed-chunk-2"> </p>
+
+<p>Legend: <span style="color:blue">Democrats</span>, <span style="color:red">Republicans</span>, and <span style="color:green">Other</span></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Changing Preferences in Congress?'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Measuring Legislator Preferences'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Preferences in the U.S. House of Representatives'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Preferences in the Senate'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  <script src="libraries/widgets/interactive/js/ace/js/ace.js"></script>
+<script src="libraries/widgets/interactive/js/opencpu-0.5.js"></script>
+<script src="libraries/widgets/interactive/js/interactive.js"></script>
+
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<script src="shared/shiny.js" type="text/javascript"></script>
+  <script src="shared/slider/js/jquery.slider.min.js"></script>
+  <script src="shared/bootstrap/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="shared/slider/css/jquery.slider.min.css"></link>
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
